@@ -1,7 +1,7 @@
 print("Bienvenido a un combate pokemon, en este combate vas a "
       "contraolar a un pikachu que tiene 100 de vida, pelearas contra un charmander, un bulbasour o un squirtle")
 
-pokemon_elejido = input("contra que pokemon quieres pelear (Squirtle / Bulbasour / Charmander): ")
+pokemon_elejido = input("Contra que pokemon quieres pelear (Squirtle / Bulbasour / Charmander): ")
 # variables iniciales
 hp_enemigo = 0
 hp_pikachu = 100
@@ -52,4 +52,5 @@ if hp_enemigo <= 0:
 if hp_pikachu <= 0:
     print("Has perdido, suerte para la proxima")
 
-print("El combate ha terminado")
+print("El combate ha terminado.")
+input("Presiona enter para terminar.")
