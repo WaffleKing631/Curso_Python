@@ -10,6 +10,7 @@ n_consonantes = 0
 n_espacios = 0
 n_comas = 0
 n_puntos = 0
+c_letras = []
 
 for letra in frase_usuario:
     if letra in vocales:
@@ -20,6 +21,8 @@ for letra in frase_usuario:
         n_comas += 1
     if letra in puntos:
         n_puntos += 1
+    if letra in vocales:
+        c_letras.append(letra)
     else:
         n_consonantes += 1
 
@@ -28,3 +31,4 @@ print("las consonantes son {}".format(n_consonantes))
 print("las comas son {}".format(n_comas))
 print("las puntos son {}".format(n_puntos))
 print("los espacios son {}".format(n_espacios))
+print(c_letras)
