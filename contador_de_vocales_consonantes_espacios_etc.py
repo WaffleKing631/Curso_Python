@@ -6,6 +6,9 @@ comas = [","]
 puntos = ["."]
 mayusculas = ["A", "B", "C", "D", "E", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "S", "F", "G", "H", "J",
               "K", "L", "Z", "X", "V", "N", "M"]
+consonantes = ["q", "w", "r", "t", "y", "p", "s", "d", "f", "g", "h", "j", "k", "l", "z",
+               "x", "c", "v", "b", "n", "m", "B", "C", "D", "Q", "W", "R", "T", "Y", "P",
+               "S", "F", "G", "H", "J", "K", "L", "Z", "X", "V", "N", "M"]
 
 n_vocales = 0
 n_consonantes = 0
@@ -18,6 +21,8 @@ n_mayusculas = 0
 for letra in frase_usuario:
     if letra in vocales:
         n_vocales += 1
+    if letra in consonantes:
+        n_consonantes += 1
     if letra in espacios:
         n_espacios += 1
     if letra in comas:
@@ -28,8 +33,7 @@ for letra in frase_usuario:
         c_letras.append(letra)
     if letra in mayusculas:
         n_mayusculas += 1
-    else:
-        n_consonantes += 1
+
 
 print("vocales: {}".format(n_vocales))
 print("consonantes: {}".format(n_consonantes))
